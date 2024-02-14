@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "py-bluecat-bam-sdk"
+version = "0.0.1"
+description = "Bluecat BAM API v2 SDK"
+requires-python = ">=3.12"
+keywords = ["python"]
+authors = [
+    {name = "Marco Wartmann", email = "wartmann.coding@gmail.com"},
+]
+dependencies = [
+    "httpx==0.26.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["pkg*"]  # alternatively: `exclude = ["additional*"]`
+namespaces = false
